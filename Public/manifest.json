@@ -1,24 +1,38 @@
 {
+  "id": "/",
   "name": "tempo.",
-  "short_name": "tempo",
-  "description": "A smart task management and focus productivity app designed to keep you organized and motivated.",
+  "short_name": "tempo.",
+  "description": "A focused productivity workspace for tasks, notes, goals, habits, and deep work.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone"
+  ],
+  "orientation": "portrait-primary",
+  "theme_color": "#020617",
   "background_color": "#020617",
-  "theme_color": "#4f46e5",
-  "orientation": "any",
-  "dir": "ltr",
   "lang": "en",
+  "dir": "ltr",
   "categories": [
     "productivity",
     "utilities"
   ],
-    "icons": [
+  "prefer_related_applications": false,
+
+  "icons": [
     {
       "src": "/icon.svg",
-      "sizes": "512x512",
+      "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
     }
-    ]
+  ]
+}

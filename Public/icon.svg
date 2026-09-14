@@ -1,36 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020617" />
-      <stop offset="100%" stop-color="#0f172a" />
+    <!-- Rich Deep Dark Gradient -->
+    <linearGradient id="bgBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#020408" />
     </linearGradient>
 
-    <!-- Accent Glow Gradient for 't' -->
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="50%" stop-color="#6366f1" />
-      <stop offset="100%" stop-color="#ec4899" />
+    <!-- Vibrant Pulse & Time Gradient (Emerald & Teal - representing flow & precision) -->
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
     </linearGradient>
 
-    <!-- Glow Filter Effect -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="15" result="blur" />
+    <!-- Soft Glow -->
+    <filter id="cleanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
-  <!-- App Rounded Square Background -->
-  <rect width="512" height="512" rx="115" fill="url(#bgGrad)" />
+  <!-- App Icon Background -->
+  <rect width="512" height="512" rx="116" fill="url(#bgBase)" />
+
+  <!-- Outer Minimalist Clock / Time Ring -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#1e293b" stroke-width="6" opacity="0.5" />
   
-  <!-- Subtle Border Glow -->
-  <rect width="512" height="512" rx="115" fill="none" stroke="#6366f1" stroke-width="4" stroke-opacity="0.3" />
+  <!-- Time / Speed ticks on the ring -->
+  <circle cx="256" cy="96" r="4" fill="#64748b" />
+  <circle cx="416" cy="256" r="4" fill="#64748b" />
+  <circle cx="256" cy="416" r="4" fill="#64748b" />
+  <circle cx="96" cy="256" r="4" fill="#64748b" />
 
-  <!-- Abstract Design Elements (Pulse / Time wave) -->
-  <path d="M 80 320 Q 180 220 256 320 T 432 240" fill="none" stroke="#38bdf8" stroke-width="6" stroke-opacity="0.25" stroke-linecap="round" />
-
-  <!-- Main Letter 't.' -->
-  <g filter="url(#glow)">
-    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="280" fill="url(#textGrad)" letter-spacing="-10">t.</text>
+  <!-- Central Concept: ECG / Rhythm Pulse (Tempo) transforming into a clean Time flow -->
+  <g filter="url(#cleanGlow)">
+    <path d="M 110 256 
+             H 180 
+             L 210 200 
+             L 245 320 
+             L 280 220 
+             L 310 270 
+             H 402" 
+          fill="none" 
+          stroke="url(#pulseGrad)" 
+          stroke-width="16" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
   </g>
+
+  <!-- Core Pulse Intersection Highlight (Heartbeat of Time) -->
+  <circle cx="245" cy="320" r="10" fill="#38bdf8" filter="url(#cleanGlow)" />
+  <circle cx="280" cy="220" r="10" fill="#10b981" filter="url(#cleanGlow)" />
 </svg>

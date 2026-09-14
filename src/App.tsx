@@ -40,7 +40,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<'home' | 'tasks' | 'notes'>('home');
 
   // User Profile
-  const [userName, setUserName] = useState<string>(() => localStorage.getItem('tempo_user_name') || 'عبدالله مههر');
+  const [userName, setUserName] = useState<string>(() => localStorage.getItem('tempo_user_name') || 'User');
   const [userAvatar, setUserAvatar] = useState<string>(() => localStorage.getItem('tempo_user_avatar') || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop');
   
   // Gamification (Streak, XP, Level)

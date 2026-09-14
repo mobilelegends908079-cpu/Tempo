@@ -7,15 +7,9 @@
   "theme_color": "#4f46e5",
   "icons": [
     {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/icon-512.png",
+      "src": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='112' fill='%23050508'/><circle cx='256' cy='256' r='150' fill='none' stroke='%2338bdf8' stroke-width='16'/><path d='M 160 180 H 352 M 256 180 V 360' fill='none' stroke='%2338bdf8' stroke-width='38' stroke-linecap='round'/></svg>",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any maskable"
     }
   ]

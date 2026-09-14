@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.vercel.tempo_pwtg_lnbfyx53c_mobilelegends908079_4666.twa",
+      "sha256_cert_fingerprints": [
+        "8C:17:63:7C:C3:E9:81:BB:8C:4C:EA:E0:60:AA:43:C6:1B:1A:63:3A:C2:CA:0A:99:2C:E5:9C:74:19:A0:69:EB"
+      ]
+    }
+  }
+]

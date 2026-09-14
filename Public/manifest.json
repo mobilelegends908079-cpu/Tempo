@@ -1,16 +1,24 @@
 {
-  "name": "Tempo OS",
-  "short_name": "Tempo",
+  "name": "tempo.",
+  "short_name": "tempo",
+  "description": "A smart task management and focus productivity app designed to keep you organized and motivated.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#090d16",
+  "background_color": "#020617",
   "theme_color": "#4f46e5",
-  "icons": [
+  "orientation": "any",
+  "dir": "ltr",
+  "lang": "en",
+  "categories": [
+    "productivity",
+    "utilities"
+  ],
+    "icons": [
     {
-      "src": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='112' fill='%23050508'/><circle cx='256' cy='256' r='150' fill='none' stroke='%2338bdf8' stroke-width='16'/><path d='M 160 180 H 352 M 256 180 V 360' fill='none' stroke='%2338bdf8' stroke-width='38' stroke-linecap='round'/></svg>",
+      "src": "/icon.svg",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     }
-  ]
-}
+    ]
